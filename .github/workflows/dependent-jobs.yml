@@ -17,6 +17,7 @@ jobs:
     name: A job that runs on MacOS after first two jobs
     steps:
       - run: ls
+      - name: substep 2
         run: pwd
   final_job:
     needs: job_on_macos
